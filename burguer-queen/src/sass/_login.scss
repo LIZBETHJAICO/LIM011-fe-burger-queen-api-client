@@ -1,0 +1,117 @@
+                @import "./variables";
+                @import "./mixins";
+                .section-login {
+                    min-height: 100vh;
+                    display: flex;
+                    justify-content: center;
+                    background-image: url(../img/fondo.jpg);
+                }
+                
+                .section-forms {
+                    background-image: url(../img/victorian-ocre.jpg);
+                    border-radius: 15px;
+                    padding: 20px;
+                    box-shadow: $color-shandow-lead;
+                    border: 1px solid $color-shadow-brow;
+                    max-width: 650px;
+                    margin: auto;
+                    display: flex;
+                    .wrapper-logo {
+                        img {
+                            border-radius: 150px;
+                        }
+                    }
+                    .form-inputs {
+                        width: 50%;
+                        padding-top: 40px;
+                        padding-left: 40px;
+                        padding-right: 40px;
+                    }
+                    h2 {
+                        font-size: 20px;
+                        text-align: center;
+                    }
+                    button {
+                        display: block;
+                        font-weight: 600;
+                        font-size: 1.2rem;
+                        width: 180px;
+                        padding: 0.7em 1.5em 0.7em 1.5em;
+                        border: 2px solid rgb(92, 10, 10);
+                        margin: 1rem;
+                        border-radius: 15px;
+                    }
+                }
+                
+                @media (max-width:$desktops) {
+                    .section-login {
+                        background-position: right center;
+                    }
+                }
+                
+                @media (max-width: $tablets) {
+                    .section-forms {
+                        .logo-image {
+                            width: 100%;
+                            height: 100%;
+                        }
+                        form {
+                            padding-top: 10px;
+                            padding-left: 30px;
+                            padding-right: 30px;
+                            h2 {
+                                width: 200px;
+                            }
+                            .form-input {
+                                width: 150px;
+                            }
+                        }
+                    }
+                }
+                
+                @media (max-width: $landscape) {
+                    .section-forms {
+                        display: block;
+                        .logo-image {
+                            display: block;
+                            margin: auto;
+                            width: 50%;
+                            height: 50%;
+                        }
+                        form {
+                            width: 100%;
+                            padding: 40px 0 30px;
+                            h2 {
+                                width: 200px;
+                            }
+                            .form-input {
+                                width: 150px;
+                            }
+                        }
+                    }
+                    button {
+                        margin-top: 60px;
+                    }
+                }
+                
+                @media (max-width: $portrait) {
+                    .section-forms {
+                        display: block;
+                        .logo-image {
+                            display: block;
+                            margin: auto;
+                            width: 50%;
+                            height: 50%;
+                        }
+                        form {
+                            width: 100%;
+                            padding: 40px 0 30px;
+                            h2 {
+                                width: 200px;
+                            }
+                            .form-input {
+                                width: 150px;
+                            }
+                        }
+                    }
+                }

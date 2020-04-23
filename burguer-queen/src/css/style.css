@@ -1,3 +1,114 @@
+/* color*/
+/*response-medias*/
+.section-login {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-image: url(../img/fondo.jpg);
+}
+
+.section-forms {
+  background-image: url(../img/victorian-ocre.jpg);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 10px 9px 20px 13px #3f180ecc;
+  border: 1px solid #7e504ecc;
+  max-width: 650px;
+  margin: auto;
+  display: flex;
+}
+.section-forms .wrapper-logo img {
+  border-radius: 150px;
+}
+.section-forms .form-inputs {
+  width: 50%;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.section-forms h2 {
+  font-size: 20px;
+  text-align: center;
+}
+.section-forms button {
+  display: block;
+  font-weight: 600;
+  font-size: 1.2rem;
+  width: 180px;
+  padding: 0.7em 1.5em 0.7em 1.5em;
+  border: 2px solid #5c0a0a;
+  margin: 1rem;
+  border-radius: 15px;
+}
+
+@media (max-width: 1199px) {
+  .section-login {
+    background-position: right center;
+  }
+}
+@media (max-width: 991px) {
+  .section-forms .logo-image {
+    width: 100%;
+    height: 100%;
+  }
+  .section-forms form {
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .section-forms form h2 {
+    width: 200px;
+  }
+  .section-forms form .form-input {
+    width: 150px;
+  }
+}
+@media (max-width: 767px) {
+  .section-forms {
+    display: block;
+  }
+  .section-forms .logo-image {
+    display: block;
+    margin: auto;
+    width: 50%;
+    height: 50%;
+  }
+  .section-forms form {
+    width: 100%;
+    padding: 40px 0 30px;
+  }
+  .section-forms form h2 {
+    width: 200px;
+  }
+  .section-forms form .form-input {
+    width: 150px;
+  }
+
+  button {
+    margin-top: 60px;
+  }
+}
+@media (max-width: 575px) {
+  .section-forms {
+    display: block;
+  }
+  .section-forms .logo-image {
+    display: block;
+    margin: auto;
+    width: 50%;
+    height: 50%;
+  }
+  .section-forms form {
+    width: 100%;
+    padding: 40px 0 30px;
+  }
+  .section-forms form h2 {
+    width: 200px;
+  }
+  .section-forms form .form-input {
+    width: 150px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
