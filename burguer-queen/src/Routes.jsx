@@ -1,6 +1,6 @@
 import React from 'react';
-import LoginForm from './components/LoginForm';
-import Home from './components/Home/Home'
+import LoginForm from './components/Login/LoginForm';
+import Home from './components/Home'
 
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 const Routes = () => {

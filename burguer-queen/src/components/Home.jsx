@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from '../Home/Header'
-import MenuProducts from '../Home/Menu/MenuProducts'
+import Header from './Header'
+import MenuProducts from './Menu/MenuProducts'
 const Home = () => {
 return(
     <section>
