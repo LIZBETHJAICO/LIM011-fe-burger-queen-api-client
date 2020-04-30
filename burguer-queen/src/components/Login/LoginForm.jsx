@@ -7,20 +7,6 @@ import '../../css/style.css';
 
 const LoginForm =() => {
   const history = useHistory();
-  // esto es para cada uno crear un state para cada input
-  /*const [email, setEmail] = useState('');
-  const [password, setPassword]=useState('')
-  const handleInputEmail =(event) => {
-   console.log('funciona email')
-   console.log(event.target.value)
-   setEmail(event.target.value)
-  }
-  const handleInputPassword =(event) => {
-   console.log('funciona pasword');
-   console.log(event.target.value)
-   setPassword(event.target.value)  
-  }
-*/
   const [data, setData] = useState({
     email :'',
     password :'',
@@ -36,11 +22,13 @@ const LoginForm =() => {
   event.preventDefault();
   console.log(data.email + ' ' + data.password)
   getToken(data.email, data.password).then((res) => {
-    if (res.getToken === undefined) {
+    console.log(res,'res');
+    
+    if (!res.token) {
       console.log('Email y contraseña incorrecto');
     } else {
-      localStorage.setItem('token', res.getToken);
-      console.log(`este es el token: ${localStorage.getItem('getToken')}`);
+      localStorage.setItem('token', res.token);
+      console.log(`este es el token: ${localStorage.getItem('token')}`);
       history.push('/Home');
     }
   });
